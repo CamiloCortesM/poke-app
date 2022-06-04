@@ -1,23 +1,23 @@
-import React from 'react'
-import { CountFunc } from './helpers/CountFunc';
-import { pokefunc } from './helpers/pokefunc';
-import AppRoutes from './routes/AppRoutes';
+import { useEffect, useState } from "react";
+import { pokefunc } from "./helpers/pokefunc";
+import { DataContext } from "./hooks/DataContext";
+import { useFetchPokemon } from "./hooks/useFetchPokemon";
+import AppRoutes from "./routes/AppRoutes";
 
 const MainApp = () => {
-  CountFunc().then(data=>
-      {
-        for (let index = 0; index < data; index++) {
-          pokefunc(index).then(dato=>{
-            console.log(dato)
-          })
-        }
-      }
-    )
-  
+  const [poke, setPoke] = useState([]);
+  const data = useFetchPokemon(poke);
+  useEffect(() => {
+    pokefunc().then((data) =>
+      data.map((content) => setPoke((p) => [...p, content.url]))
+    );
+  }, []);
 
   return (
-    <AppRoutes />
-  )
-}
+    <DataContext.Provider value={data}>
+      <AppRoutes />
+    </DataContext.Provider>
+  );
+};
 
 export default MainApp;
