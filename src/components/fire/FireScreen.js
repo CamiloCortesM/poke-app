@@ -1,13 +1,12 @@
-import React, { useContext } from 'react'
-import { DataContext } from '../../hooks/DataContext'
+
+import { usePokemonType } from "../../hooks/usePokemonType";
+
+import { ListPoket } from "../pokemon/ListPoket";
 
 export const FireScreen = () => {
+    const {poketFire}=usePokemonType('fire');
 
-    const data = useContext(DataContext);
-    console.log(data)
   return (
-    <div>
-        <h2>FireScreen</h2>
-    </div>
-  )
-}
+    <div>{poketFire ? <ListPoket data={poketFire} /> : <p>Cargando...</p>}</div>
+  );
+};
