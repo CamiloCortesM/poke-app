@@ -1,7 +1,29 @@
 
-
+body{
+  background-color: #202227;
+}
 nav {
-  background-color: #2d333b;
-  box-shadow: 5px 9px 20px #bbbbbb;
+  background-color: #32373c;
+  box-shadow: 5px 9px 20px #2b2c2e;
 }
 
+.card-Color{
+  background-color: #32373c;
+  color: white;
+}
+nav img{
+  width: 40px;
+}
+
+p{
+  color: aliceblue;
+}
+.search-poke{
+ margin: 0 1.4rem;
+}
+
+@media (max-width:991px) {
+  .search-poke{
+    margin:0;
+  }
+}
