@@ -14,9 +14,6 @@ export const useFetchPokemon = (poke) => {
         })
     }, [poke])
     
-    if(pokemon.length===poke.length){
         return pokemon
-    }
 
-    return false;
 }
