@@ -1,7 +1,19 @@
+import { useContext } from "react"
+import { DataContext } from "../../hooks/DataContext"
+import { CardPoket } from "./CardPoket"
+
 export const PokemonList = () => {
+    const data = useContext(DataContext)
   return (
-    <div>
-        <h2>PokemonList</h2>
+    <div className="container">
+       {
+           data ? 
+           data.map(pk=>{
+            return <CardPoket {...pk} key={pk.id}/>
+           }   
+           )
+           :<p>Cargando...</p>
+       }
     </div>
   )
 }
