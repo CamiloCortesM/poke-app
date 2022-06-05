@@ -1,11 +1,9 @@
-import { useContext } from "react"
-import { DataContext } from "../../hooks/DataContext"
 import { CardPoket } from "./CardPoket"
 
-export const PokemonList = () => {
-    const data = useContext(DataContext)
+export const ListPoket = ({data}) => {
   return (
-    <div className="container">
+    <div className="container mt-5 mb-5">
+       <div className="row row-cols-2 row-cols-md-3 row-cols-lg-5 row-cols-sm-2 ">
        {
            data ? 
            data.map(pk=>{
@@ -14,6 +12,7 @@ export const PokemonList = () => {
            )
            :<p>Cargando...</p>
        }
+       </div>
     </div>
   )
 }
