@@ -1,10 +1,12 @@
-import React from 'react'
-import { PokemonList } from './pokemon/PokemonList'
+import React, { useContext } from 'react'
+import { DataContext } from '../hooks/DataContext'
+import { ListPoket } from './pokemon/ListPoket'
 
 export const Home = () => {
+    const data = useContext(DataContext)
   return (
     <div>
-        <PokemonList />
+        <ListPoket data={data}/>
     </div>
   )
 }
