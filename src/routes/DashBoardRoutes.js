@@ -4,7 +4,7 @@ import { ElectricScreen } from "../components/electric/ElectricScreen";
 import { FireScreen } from "../components/fire/FireScreen";
 import { GroundScreen } from "../components/ground/GroundScreen";
 import { Home } from "../components/Home";
-import { PlantScreen } from "../components/plant/PlantScreen";
+import { NormalScreen } from "../components/normal/NormalScreen";
 import { SearchScreen } from "../components/search/SearchScreen";
 import NavBar from "../components/ui/NavBar";
 import { WaterScreen } from "../components/water/WaterScreen";
@@ -16,10 +16,10 @@ export const DashBoardRoutes = () => {
       <div className="container">
         <Routes>
           <Route path="home" element={<Home />} />
-          <Route path="electri" element={<ElectricScreen />} />
+          <Route path="electric" element={<ElectricScreen />} />
           <Route path="fire" element={<FireScreen />} />
           <Route path="ground" element={<GroundScreen />} />
-          <Route path="plant" element={<PlantScreen />} />
+          <Route path="normal" element={<NormalScreen />} />
           <Route path="seach" element={<SearchScreen />} />
           <Route path="water" element={<WaterScreen />} />
           <Route path="/" element={<Home />} />
