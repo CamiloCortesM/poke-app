@@ -1,9 +1,10 @@
 import React from 'react'
+import { PokemonList } from './pokemon/PokemonList'
 
 export const Home = () => {
   return (
     <div>
-        <h2>Home</h2>
+        <PokemonList />
     </div>
   )
 }
