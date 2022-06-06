@@ -7,7 +7,6 @@ import AppRoutes from "./routes/AppRoutes";
 const MainApp = () => {
   const [poke, setPoke] = useState([]);
   const data = useFetchPokemon(poke);
-  console.log(data);
   useEffect(() => {
     pokefunc().then((data) =>
       data.map((content) => setPoke((p) => [...p, content.url]))
