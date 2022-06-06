@@ -1,9 +1,10 @@
 import React from "react";
+import { usePokemonType } from "../../hooks/usePokemonType";
+import { ListPoket } from "../pokemon/ListPoket";
 
 export const WaterScreen = () => {
+  const { poketFire } = usePokemonType("water");
   return (
-    <div>
-      <h2>WaterScreen</h2>
-    </div>
+    <div>{poketFire ? <ListPoket data={poketFire} /> : <p>Cargando...</p>}</div>
   );
 };
