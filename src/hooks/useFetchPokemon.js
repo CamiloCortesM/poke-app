@@ -4,7 +4,6 @@ import { pokeUnique } from "../helpers/pokeUnique";
 export const useFetchPokemon = (poke) => {
 
     const [pokemon, setPokemon] = useState([])
-
     useEffect(() => {
         poke.map(url=>{
             return pokeUnique(url)
@@ -14,6 +13,6 @@ export const useFetchPokemon = (poke) => {
         })
     }, [poke])
     
-        return pokemon
+        return pokemon;
 
 }
