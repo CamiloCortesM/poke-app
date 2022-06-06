@@ -20,8 +20,8 @@ export const DashBoardRoutes = () => {
           <Route path="fire" element={<FireScreen />} />
           <Route path="ground" element={<GroundScreen />} />
           <Route path="normal" element={<NormalScreen />} />
-          <Route path="seach" element={<SearchScreen />} />
           <Route path="water" element={<WaterScreen />} />
+          <Route path="search" element={<SearchScreen />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
