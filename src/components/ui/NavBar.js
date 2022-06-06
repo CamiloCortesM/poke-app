@@ -25,27 +25,33 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link " aria-current="page" to="/fire">
+              <NavLink className={(navData)=>navData.isActive ? "nav-link fire":'nav-link'} aria-current="page" to="/fire">
                 FIRE
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link " aria-current="page" to="/electric">
+              <NavLink className={(navData)=>navData.isActive ? "nav-link electric":'nav-link'} aria-current="page" to="/electric">
                 ELECTRIC
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link " aria-current="page" to="/ground">
+              <NavLink className={(navData)=>navData.isActive ? "nav-link ground":'nav-link'} aria-current="page" to="/ground">
                 GROUND
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link " aria-current="page" to="/normal">
+              <NavLink className={(navData)=>navData.isActive ? "nav-link normal":'nav-link'} aria-current="page" to="/normal">
                 NORMAL
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link " aria-current="page" to="/search">
+              <NavLink className={(navData)=>navData.isActive ? "nav-link water":'nav-link'}aria-current="page" to="/water">
+                WATER
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link"
+              aria-current="page" to="/search">
                 SEARCH
               </NavLink>
             </li>
