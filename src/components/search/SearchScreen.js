@@ -28,7 +28,7 @@ export const SearchScreen = () => {
           <form onSubmit={handleSubmit}>
             <input
               type="text"
-              placeholder="seach a hero"
+              placeholder="seach a Pokemon"
               className="form-control"
               name="searchText"
               autoComplete="off"
