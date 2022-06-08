@@ -22,19 +22,19 @@ nav img{
   box-shadow: 5px 7px 1px #5e6065;
 }
 
-.fire{
+.fires{
   color: rgb(255, 115, 115);
 }
-.electric{
+.electrics{
   color: rgb(236, 255, 115);
 }
-.ground{
+.grounds{
   color: rgb(152, 101, 53);
 }
-.normal{
+.normals{
   color: rgb(79, 198, 87);
 }
-.water{
+.waters{
   color: rgb(10, 235, 255);
 }
 
