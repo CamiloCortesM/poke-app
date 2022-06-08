@@ -1,21 +1,31 @@
-import { useContext} from "react";
+import { useContext } from "react";
+import queryString from 'query-string';
+import { useLocation, useNavigate } from "react-router-dom";
 import { DataContext } from "../../hooks/DataContext";
 import { useForm } from "../../hooks/useForm";
 import { CardPoket } from "../pokemon/CardPoket";
+import { getPokemonByName } from "../../selectors/getPokemonByName";
 
 export const SearchScreen = () => {
-  const [values, handleInputChange ] = useForm({
-    searchText:"",
-  });
+  const location = useLocation();
+  const navigate = useNavigate();
 
+ const {q=''} = queryString.parse(location.search);
+ 
+  const [values, handleInputChange] = useForm({
+    searchText: q,
+  });
+  const data = useContext(DataContext);
   const { searchText } = values;
+
+  const pokeData = getPokemonByName(data,q);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(searchText);
+    navigate(`?q=${searchText}`);
   };
 
-  const data = useContext(DataContext);
+
   return (
     <div className="container mt-3">
       <h2>Search Pokemon</h2>
@@ -46,8 +56,12 @@ export const SearchScreen = () => {
           <h4>Result</h4>
           <hr />
           <div className="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-sm-2 ">
-            {data ? (
-              data.map((pk) => {
+            {
+              q==='' ? <div className="alert alert-info col-lg-12 col-md-12 col-12 col-sm-12">Search a Pokemon</div>
+              : (pokeData.length===0) && <div className="alert alert-danger col-lg-12 col-md-12 col-12 col-sm-12">Pokemon No Found</div>
+            }
+            {pokeData ? (
+              pokeData.map((pk) => {
                 return <CardPoket {...pk} key={pk.id} />;
               })
             ) : (
