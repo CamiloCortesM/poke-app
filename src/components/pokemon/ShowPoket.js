@@ -90,11 +90,11 @@ export const ShowPoket = ({
           </div>
         </div>
 
-        {/* <button className="btn btn-outline-info"
-        onClick={handleReturn}
+         <button className="btn btn-outline-info mt-5"
+        // onClick={handleReturn}
         >
           Regresar
-        </button> */}
+        </button> 
       </div>
     </>
   );
