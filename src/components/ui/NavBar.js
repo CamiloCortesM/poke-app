@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import logo from '../../assets/logo.png'
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid expand">
-        <img src="./assets/logo.png" alt="pokebola" className="navbar"/>
+        <img src={logo} alt="pokebola" className="navbar"/>
         <button
           className="navbar-toggler "
           type="button"
