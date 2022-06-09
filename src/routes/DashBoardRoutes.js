@@ -5,6 +5,7 @@ import { FireScreen } from "../components/fire/FireScreen";
 import { GroundScreen } from "../components/ground/GroundScreen";
 import { Home } from "../components/Home";
 import { NormalScreen } from "../components/normal/NormalScreen";
+import { PokemonScreen } from "../components/pokemon/PokemonScreen";
 import { SearchScreen } from "../components/search/SearchScreen";
 import NavBar from "../components/ui/NavBar";
 import { WaterScreen } from "../components/water/WaterScreen";
@@ -22,6 +23,7 @@ export const DashBoardRoutes = () => {
           <Route path="normal" element={<NormalScreen />} />
           <Route path="water" element={<WaterScreen />} />
           <Route path="search" element={<SearchScreen />} />
+          <Route path="pokemon/:id" element={<PokemonScreen />}/>
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
