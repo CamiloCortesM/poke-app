@@ -2,11 +2,102 @@
 body{
   background-color: #202227;
 }
+h1{
+  color: #fff;
+}
 nav {
   background-color: #32373c;
   box-shadow: 5px 9px 20px #2b2c2e;
 }
+.normal{
+  background-color: #8e3c16;
+  color: #fff;
+}
 
+.fighting{
+  background-color: #847c77;
+  color: #fff;
+}
+
+.flying{
+  background-color: #ac2390;
+  color: #fff;
+}
+.poison{
+  background-color: #2683a2;
+  color: #fff;
+}
+.ground{
+  background-color: #663912;
+  color: #fff;
+}
+
+.rock{
+  background-color: #b12d97;
+  color: #fff;
+}
+
+.bug{
+  background-color: #24eb8f;
+  color: #fff;
+}
+
+.ghost{
+  background-color: #cfcfcf;
+  color: rgb(0, 0, 0);
+}
+.steel{
+  background-color: #6f6f6f;
+  color: #fff;
+}
+
+.fire{
+  background-color: rgb(223, 28, 28);
+  color: white;
+}
+
+.electric{
+  background-color: rgb(217, 227, 26);
+  color: rgb(0, 0, 0);
+}
+.ice{
+  background-color: rgb(207, 209, 219);
+  color: rgb(0, 0, 0);
+}
+
+.dragon{
+  background-color: rgb(98, 24, 24);
+  color: white;
+}
+.dark{
+  background-color: rgb(46, 41, 41);
+  color: white;
+  border: 1px white solid;
+}
+.fairy{
+  background-color: rgb(26, 212, 175);
+  color: rgb(0, 0, 0);
+}
+.unknown{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.shadow{
+  background-color: rgb(93, 93, 93);
+  color: white;
+}
+.water{
+  background-color: rgb(34, 63, 189);
+  color: white;
+}
+.psychic{
+  background-color: rgb(134, 13, 209);
+  color: white;
+}
+.grass{
+  background-color: rgb(33, 162, 13);
+  color: white;
+}
 .card-Color{
   background-color: #32373c;
   color: white;
