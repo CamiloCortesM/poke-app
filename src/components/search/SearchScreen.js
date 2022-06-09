@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import queryString from 'query-string';
 import { useLocation, useNavigate } from "react-router-dom";
 import { DataContext } from "../../hooks/DataContext";
@@ -11,6 +11,7 @@ export const SearchScreen = () => {
   const navigate = useNavigate();
 
  const {q=''} = queryString.parse(location.search);
+ console.log(q)
  
   const [values, handleInputChange] = useForm({
     searchText: q,
@@ -18,7 +19,7 @@ export const SearchScreen = () => {
   const data = useContext(DataContext);
   const { searchText } = values;
 
-  const pokeData = getPokemonByName(data,q);
+  const pokeData = useMemo(()=>getPokemonByName(data,q),[data,q]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
