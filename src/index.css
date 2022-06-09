@@ -4,6 +4,14 @@ body{
 }
 h1{
   color: #fff;
+  text-transform: capitalize;
+}
+.types span{
+  width: 6rem;
+}
+.types{
+  display: flex;
+  justify-content: center;
 }
 nav {
   background-color: #32373c;
