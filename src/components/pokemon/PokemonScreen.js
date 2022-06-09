@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom";
 import { usePokemonId } from "../../hooks/usePokemonId";
+import { ShowPoket } from "./ShowPoket";
 
 export const PokemonScreen = () => {
-    const { id } = useParams();
-    const data = usePokemonId(id);
+  const { pokeId } = useParams();
+  const data = usePokemonId(pokeId);
   return (
-    <>
-    {data && <h1>{data.name}</h1>}
-    </>
+    <div className="row mt-5 justify-content-around">
+        {data && <ShowPoket {...data}/>}
+    </div>
   );
 };
