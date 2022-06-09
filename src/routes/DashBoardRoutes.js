@@ -23,7 +23,7 @@ export const DashBoardRoutes = () => {
           <Route path="normal" element={<NormalScreen />} />
           <Route path="water" element={<WaterScreen />} />
           <Route path="search" element={<SearchScreen />} />
-          <Route path="pokemon/:id" element={<PokemonScreen />}/>
+          <Route path="pokemon/:pokeId" element={<PokemonScreen />}/>
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
