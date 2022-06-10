@@ -6,6 +6,9 @@ h1{
   color: #fff;
   text-transform: capitalize;
 }
+.img-poket{
+  width: 100%;
+}
 .types span{
   width: 6rem;
 }
