@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 export const ShowPoket = ({
   atack,
   defence,
@@ -14,10 +16,16 @@ export const ShowPoket = ({
   url,
   weight,
 }) => {
+
+  const navigate = useNavigate();
+
+  const handleReturn = ()=>{
+    navigate(-1)
+  }
   return (
     <>
-      <div className="col-lg-4">
-        <img src={url} alt={name} />
+      <div className="col-lg-5 col-md-5 col-sm-8 col-12">
+        <img src={url} className="img-poket" alt={name} />
         <div className="types">
           {types.map((tp) => {
             return (
@@ -29,31 +37,31 @@ export const ShowPoket = ({
         </div>
       </div>
 
-      <div className="col-lg-6">
-        <h1 className="mb-3">{name} #{id}</h1>
+      <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+        <h1 className="mb-3 mt-4">{name} #{id}</h1>
         <div className="row">
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-md-3 col-sm-3 col-3">
             <img
               src={backDefault}
               className="img-thumbnail bg-secondary bg-opacity-10"
               alt={name}
             />
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-md-3 col-sm-3 col-3">
             <img
               src={frontDefault}
               className="img-thumbnail bg-secondary bg-opacity-10"
               alt={name}
             />
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-md-3 col-sm-3 col-3">
             <img
               src={backShiny}
               className="img-thumbnail bg-secondary bg-opacity-10"
               alt={name}
             />
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-md-3 col-sm-3 col-3">
             <img
               src={frontShiny}
               className="img-thumbnail bg-secondary bg-opacity-10"
@@ -62,7 +70,7 @@ export const ShowPoket = ({
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-12">
             <ul className="list-group mt-3">
               <li className="list-group-item list-group-item-danger">
                 <b>Atack:</b> {atack}
@@ -75,7 +83,7 @@ export const ShowPoket = ({
               </li>
             </ul>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-12">
             <ul className="list-group mt-3">
               <li className="list-group-item list-group-item-success">
                 <b>HP:</b> {hp}
@@ -90,8 +98,8 @@ export const ShowPoket = ({
           </div>
         </div>
 
-         <button className="btn btn-outline-info mt-5"
-        // onClick={handleReturn}
+         <button className="btn btn-outline-info mt-3"
+        onClick={handleReturn}
         >
           Regresar
         </button> 
