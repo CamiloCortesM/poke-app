@@ -3,6 +3,12 @@
 <img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi.svg?sanitize=true" width="192" align="right" hspace="20" />
 a web page where detailed information about the first 200 Pokémon is displayed, where you can search for a Pokémon
 
+a public Pokémon [pokeapi](https://github.com/PokeAPI/pokeapi) api was used for the development of this project.
+
+![GitHub Release](https://img.shields.io/github/v/release/CamiloCortesM/poke-app?label=pokeapp&sort=semver)
+![GitHub js](https://img.shields.io/github/languages/top/CamiloCortesM/poke-app)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
