@@ -1,5 +1,6 @@
 # Poke-app
 
+<img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi.svg?sanitize=true" width="192" align="right" hspace="20" />
 a web page where detailed information about the first 200 Pokémon is displayed, where you can search for a Pokémon
 
 ## Available Scripts
