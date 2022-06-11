@@ -7,15 +7,19 @@ a public Pokémon [pokeapi](https://github.com/PokeAPI/pokeapi) api was used for
 
 ![GitHub Release](https://img.shields.io/github/v/release/CamiloCortesM/poke-app?label=pokeapp&sort=semver)
 ![GitHub js](https://img.shields.io/github/languages/top/CamiloCortesM/poke-app)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 
-## Available Scripts
+### Installation
 
-In the project directory, you can run:
+1. `npm install or npm i` to install project dependencies.
 
-### `npm start`
+### Running locally
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. `npm start` to start the react application in the local service
+2. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+
 
 ### `npm run build`
 
