@@ -1,5 +1,5 @@
 import { useContext, useMemo } from "react";
-import queryString from 'query-string';
+import queryString from "query-string";
 import { useLocation, useNavigate } from "react-router-dom";
 import { DataContext } from "../../hooks/DataContext";
 import { useForm } from "../../hooks/useForm";
@@ -10,22 +10,21 @@ export const SearchScreen = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
- const {q=''} = queryString.parse(location.search);
- console.log(q)
- 
+  const { q = "" } = queryString.parse(location.search);
+  console.log(q);
+
   const [values, handleInputChange] = useForm({
     searchText: q,
   });
   const data = useContext(DataContext);
   const { searchText } = values;
 
-  const pokeData = useMemo(()=>getPokemonByName(data,q),[data,q]);
+  const pokeData = useMemo(() => getPokemonByName(data, q), [data, q]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate(`?q=${searchText}`);
   };
-
 
   return (
     <div className="container mt-3">
@@ -57,10 +56,17 @@ export const SearchScreen = () => {
           <h4>Result</h4>
           <hr />
           <div className="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-sm-2 ">
-            {
-              q==='' ? <div className="alert alert-info col-lg-12 col-md-12 col-12 col-sm-12">Search a Pokemon</div>
-              : (pokeData.length===0) && <div className="alert alert-danger col-lg-12 col-md-12 col-12 col-sm-12">Pokemon No Found</div>
-            }
+            {q === "" ? (
+              <div className="alert alert-info col-lg-12 col-md-12 col-12 col-sm-12">
+                Search a Pokemon
+              </div>
+            ) : (
+              pokeData.length === 0 && (
+                <div className="alert alert-danger col-lg-12 col-md-12 col-12 col-sm-12">
+                  Pokemon No Found
+                </div>
+              )
+            )}
             {pokeData ? (
               pokeData.map((pk) => {
                 return <CardPoket {...pk} key={pk.id} />;
