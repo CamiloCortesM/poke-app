@@ -1,4 +1,4 @@
-import { useContext}from "react";
+import { useContext } from "react";
 import { getPokemonById } from "../selectors/getPokemonById";
 import { DataContext } from "./DataContext";
 

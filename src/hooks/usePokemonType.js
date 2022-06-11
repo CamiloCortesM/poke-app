@@ -13,5 +13,5 @@ export const usePokemonType = (type) => {
       }
     }, [type,data]);
   
-    return {poketFire};
+    return poketFire;
 }
