@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { ElectricScreen } from "../components/electric/ElectricScreen";
+import { ErrorScreen } from "../components/error/ErrorScreen";
 import { FireScreen } from "../components/fire/FireScreen";
 import { GroundScreen } from "../components/ground/GroundScreen";
 import { Home } from "../components/Home";
@@ -25,6 +26,7 @@ export const DashBoardRoutes = () => {
           <Route path="search" element={<SearchScreen />} />
           <Route path="pokemon/:pokeId" element={<PokemonScreen />}/>
           <Route path="/" element={<Home />} />
+          <Route path="/*" element={<ErrorScreen />} />
         </Routes>
       </div>
     </>
