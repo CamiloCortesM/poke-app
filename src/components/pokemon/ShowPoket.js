@@ -25,11 +25,11 @@ export const ShowPoket = ({
   return (
     <>
       <div className="col-lg-5 col-md-5 col-sm-8 col-12">
-        <img src={url} className="img-poket" alt={name} />
+        <img src={url} className="img-poket animate__animated animate__fadeInLeft" alt={name} />
         <div className="types">
           {types.map((tp) => {
             return (
-              <span key={tp.type.url} className={`badge ${tp.type.name} me-1`}>
+              <span key={tp.type.url} className={`badge animate__animated animate__fadeIn ${tp.type.name} me-1`}>
                 {tp.type.name}
               </span>
             );
@@ -37,7 +37,7 @@ export const ShowPoket = ({
         </div>
       </div>
 
-      <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+      <div className="col-lg-6 col-md-6 col-sm-12 col-12 animate__animated animate__fadeInRight">
         <h1 className="mb-3 mt-4">{name} #{id}</h1>
         <div className="row">
           <div className="col-lg-3 col-md-3 col-sm-3 col-3">
