@@ -9,6 +9,21 @@ a public Pokémon [pokeapi](https://github.com/PokeAPI/pokeapi) api was used for
 ![GitHub js](https://img.shields.io/github/languages/top/CamiloCortesM/poke-app)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
+### Full screen large screen
+
+<p align="center">
+<img src="https://github.com/CamiloCortesM/poke-app/blob/main/raw/master/1.png" width="500"/>
+<img src="https://github.com/CamiloCortesM/poke-app/blob/main/raw/master/2.png" width="500"/>
+<img src="https://github.com/CamiloCortesM/poke-app/blob/main/raw/master/3.png" width="500"/>
+</p>
+
+### adaptable to mobile device
+
+<p align="center">
+<img src="https://github.com/CamiloCortesM/poke-app/blob/main/raw/master/4.png" height="500"/>
+<img src="https://github.com/CamiloCortesM/poke-app/blob/main/raw/master/5.png" height="500"/>
+<img src="https://github.com/CamiloCortesM/poke-app/blob/main/raw/master/6.png" height="500"/>
+</p>
 
 ### Installation
 
