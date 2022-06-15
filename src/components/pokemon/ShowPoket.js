@@ -37,7 +37,7 @@ export const ShowPoket = ({
         </div>
       </div>
 
-      <div className="col-lg-6 col-md-6 col-sm-12 col-12 animate__animated animate__fadeInRight">
+      <div className="col-lg-6 col-md-6 col-sm-12 col-12 animate__animated animate__fadeIn">
         <h1 className="mb-3 mt-4">{name} #{id}</h1>
         <div className="row">
           <div className="col-lg-3 col-md-3 col-sm-3 col-3">
