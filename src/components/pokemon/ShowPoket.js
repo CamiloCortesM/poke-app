@@ -25,7 +25,7 @@ export const ShowPoket = ({
   return (
     <>
       <div className="col-lg-5 col-md-5 col-sm-8 col-12">
-        <img src={url} className="img-poket animate__animated animate__fadeIn" alt={name} />
+        <img src={url} className="img-poket animate__animated animate__fadeInLeft" alt={name} />
         <div className="types">
           {types.map((tp) => {
             return (
